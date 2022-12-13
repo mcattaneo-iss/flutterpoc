@@ -47,16 +47,7 @@ class _MyAppState extends State<Login> {
   }
 
   Future<http.Response> login(String username, String password) async {
-    var body = {
-      "secret": "942667ec-fc38-4dcd-a30f-4569ccadb1ac",
-      "password": password,
-      "deviceName": "iPad (8th generation)",
-      "deviceID": "302e31a9-cf84-435e-9777-f4a63f763ff5",
-      "companyCode": "ar",
-      "username": username,
-      "truckNumber": null,
-      "application": "com.ahern.communicationcenter"
-    };
+    var body = {};
 
     try {
       final result = http.post(
